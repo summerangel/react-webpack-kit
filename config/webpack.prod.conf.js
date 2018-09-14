@@ -15,11 +15,14 @@ module.exports = merge(common, {
                 sourceMap: false // set to true if you want JS source maps
             }),
             new OptimizeCssAssetsPlugin({})
-        ],
-        splitChunks: {
-            chunks: 'all'
-        }
+        ]
+        // splitChunks: {
+        //     chunks: 'all'
+        // }
     },
+    // performance: {
+    //     hints: false
+    // },
     module: {
         rules: [
             {
