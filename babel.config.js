@@ -18,14 +18,7 @@ module.exports = function (api) {
             "@babel/preset-react"
         ],
         plugins: [
-            '@babel/plugin-transform-runtime',
-            '@babel/plugin-syntax-dynamic-import',
             [
-                '@babel/plugin-proposal-object-rest-spread',
-                {
-                    'loose': true
-                }
-            ], [
                 '@babel/plugin-proposal-decorators',
                 {
                     'legacy': true
@@ -35,9 +28,7 @@ module.exports = function (api) {
                 {
                     'loose': true
                 }
-            ], '@babel/plugin-proposal-export-default-from',
-            '@babel/plugin-proposal-export-namespace-from',
-            '@babel/plugin-proposal-numeric-separator'
+            ]
         ]
     }
 }
