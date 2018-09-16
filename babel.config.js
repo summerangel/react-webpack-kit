@@ -18,6 +18,7 @@ module.exports = function (api) {
             "@babel/preset-react"
         ],
         plugins: [
+            '@babel/plugin-transform-runtime',
             [
                 '@babel/plugin-proposal-decorators',
                 {
